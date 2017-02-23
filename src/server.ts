@@ -12,7 +12,7 @@ server.on('connection', function(socket:net.Socket){
 
     // when data is sent to the socket
     socket.on('data', function(data){
-        //
+        server.listen(socket)
     });
 
     socket.on('close', function(){
